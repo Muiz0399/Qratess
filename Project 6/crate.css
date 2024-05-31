@@ -1,0 +1,169 @@
+.c-checkout-header__steps-nav {
+    margin: 0 auto;
+}
+
+.c-checkout-header__steps-nav,
+.steps-nav {
+    display: flex;
+}
+
+.steps-nav__link {
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Noto Sans';
+
+}
+
+.is-current {
+    border-bottom: 3px solid #000000;
+    color: #000000;
+    text-decoration: none;
+}
+
+.is-disabled {
+    color: #A0A297;
+}
+
+.nav-ul{
+    display: none;
+}
+.mlogo{
+    display: none;
+}
+.myo {
+display: none;
+}
+/* C-Grid  */
+.c-grid {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border-top: 2px solid #000000;
+}
+
+.c-grid__container {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.p-cart .p-section:last-of-type {
+    border-bottom: none;
+}
+
+.p-section {
+    position: relative;
+    padding: 0 30px 60px;
+}
+
+.c-heading {
+    position: relative;
+    padding: 48px 0 47px;
+    font-family: 'Noto Sans';
+}
+
+.c-heading h2 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    font-family: 'Noto Sans';
+    line-height: 42px;
+}
+
+.p-cart__empty-sticker {
+    width: 25%;
+    margin: 60px auto 20px;
+}
+
+.p-cart__empty-sticker img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.p-cart__empty-text {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    font-family: 'Noto Sans';
+    line-height: 24px;
+    text-align: center;
+}
+
+.p-section .c-button-grid--center-button {
+    padding-top: 28px;
+}
+
+.c-button-grid--center-button {
+    text-align: center;
+}
+
+.c-button--large {
+    min-width: 267px;
+    border-radius: calc(267px / 2);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.18px;
+    font-family: 'Noto Sans';
+    text-align: center;
+    cursor: pointer;
+}
+
+.c-button--black {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.c-button,
+.c-button--large {
+    display: inline-block;
+    position: relative;
+    appearance: none;
+    height: 50px;
+    padding: 0 23.5px 0 25.5px;
+    line-height: 50px;
+    font-family: 'Noto Sans';
+    overflow: hidden;
+    user-select: none;
+    border: none;
+    outline: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.c-divider--blank {
+    display: block;
+    height: 160px;
+    margin: 0;
+    border: none;
+}
+
+.l-side-nav--cart {
+    width: 31.25%;
+    border-right: none;
+    border-left: 2px solid #000000;
+    background: #EEEEEC;
+    min-width: 450px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .c-checkout-header__steps-nav .steps-nav {
+        display: none;
+    }
+
+    .u-hidden-side-nav-control {
+        display: none;
+    }
+    .mlogo{
+        display: flex;
+    }
+}

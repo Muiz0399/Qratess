@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qrates</title>
+</head>
+
+<body>
+    <header id="header">
+        <a class="h-logo" href="/">
+            <img src="https://assets.qrates.com/packs/media/logos/qrates-logo-6b1bd403.svg" alt="Qrates">
+        </a>
+        <nav class="header-nav">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <div class="nav-menu">
+                        <div class="nav-a">DISCOVER MUSIC
+                            <i class="fa fa-chevron-down" aria-hidden="true" id="dropdown-icon"></i>
+                        </div>
+                        <ul class="nav-aa" id="nav-dropdown">
+                            <li class="nav-list">
+                                <a class="nav-list-a" href="records.html">Records</a>
+                            </li>
+                            <li class="nav-list">
+                                <a class="nav-list-a" href="casettes.html">Cassettes</a>
+                            </li>
+                            <li class="nav-list">
+                                <a class="nav-list-a" href="story.html">Stories</a>
+                            </li>
+                            <li class="nav-list">
+                                <a class="nav-list-a" href="QCurated.html">Qrates Curated</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-list-b" href="forartist.html">For Artists</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-list-b" href="forfans.html">For Fans</a>
+                </li>
+            </ul>
+            <div class="nav-mob">
+                <a class="social-i" href="https://www.facebook.com/qratesinfo" target="_blank">
+                    <i class="fab fa-facebook-f social-icons"></i>
+                </a>
+                <a class="social-i" href="https://www.instagram.com/qrates/" target="_blank">
+                    <i class="fab fa-instagram social-icons"></i>
+                </a>
+                <a class="social-i" href="https://twitter.com/qrates_com" target="_blank">
+                    <i class="fab fa-twitter social-icons"></i>
+                </a>
+            </div>
+            <div class="nav-mob mo-ml">
+                <a class="na-mr" href="/projects/start">Make a record</a>
+                <a class="na-lo" href="/signin">Log in</a>
+            </div>
+        </nav>
+        <div class="mlogo">
+            <a class="h-a-f" id="search-opener" href="search.html">
+                <i class="fa fa-search h-f" aria-hidden="true"></i>
+            </a>
+            <a class="h-a-f" href="crate.html">
+                <i class="fa fa-shopping-cart h-f" aria-hidden="true"></i>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa fa-bars h-f" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="head-last">
+            <a class="h-l-a" href="login.html">Log in</a>
+            <a class="h-l-a myo" href="/projects/start"
+                title="Currently we're suspending new project order from Qrates   Studio">Make your own
+            </a>
+        </div>
+    </header>
+
+    <section id="login-page">
+        <div class="login-main ">
+            <div class="login-container ">
+                <h2 class="login-title">Log in</h2>
+                <div class="login-subtitle">New to Qrates?
+                    <a class="login-link" href="account.html">Create an account </a>
+                </div>
+                <div class="login-sns">
+                    <a class="link-sns" href="/auth/facebook">
+                        <i class="fab fa-facebook-f  l-l"></i> Use Facebook
+                    </a>
+                    <a class="link-sns" href="/auth/twitter">
+                        <i class="fab fa-twitter l-l" aria-hidden="true"></i>Use Twitter
+                    </a>
+                    <a class="link-sns" href="/auth/soundcloud">
+                        <i class="fab fa-soundcloud l-l" aria-hidden="true"></i>Use Soundcloud
+                    </a>
+                </div>
+                <div class="login-form">
+                    <form class="new_user" id="new_user" action="/signin" accept-charset="UTF-8" method="post">
+                        <input name="utf8" type="hidden" value="✓">
+                        <input type="hidden" name="authenticity_token"
+                            value="s9EZewi4o1GpFAQgC7hwzisyV0BvWDhsw2nIfrGfjfF5geWR9hrjrCN9IAOPPVo5mBhpom/Vpzs4zyrbjpfX+Q==">
+                        <input type="hidden" name="user[requested_path]" id="user_requested_path">
+
+                        <div class="form-table">
+                            <div class="form-table-row">
+                                <div class="form-table-label">Email*</div>
+                                <input class="c-input" placeholder="Email" autofocus="autofocus" type="text" value=""
+                                    name="user[email]" id="user_email">
+                            </div>
+                            <div class="form-table-row">
+                                <div class="form-table-label">Password*</div><input class="c-input"
+                                    placeholder="Password" autocomplete="off" type="password" name="user[password]"
+                                    id="user_password">
+                            </div>
+                        </div>
+                        <a class="login-forgot" href="/password/reset">I FORGOT MY PASSWORD</a>
+                        <div class="login-required">
+                            *Required information
+                        </div>
+                        <input type="submit" name="commit" value="LOG IN"
+                            class="login-btn" data-disable-with="LOG IN">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section" id="footer">
+        <div class="footer-links">
+            <ul class="footer-ul">
+                <li class="foot-link-header">FOR ARTISTS</li>
+                <li class="foot-link"><a href="/for-artists">For Artists</a></li>
+                <li class="foot-link"><a href="/how-it-works">How it Works</a></li>
+                <li class="foot-link"><a href="/articles">Artist Toolkit</a></li>
+                <li class="foot-link"><a href="https://share.qrates.com/" target="_blank">Referral
+                        Program</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="foot-link-header">FOR FANS</li>
+                <li class="foot-link"><a href="/for-fans">For Fans</a></li>
+                <li class="foot-link"><a href="/projects?product_format=vinyl">Records</a></li>
+                <li class="foot-link"><a href="/projects?product_format=cassette">Cassettes</a></li>
+                <li class="foot-link"><a href="/stories">Stories</a></li>
+                <li class="foot-link"><a href="/curated">Qrates Curated</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="foot-link-header">OUR COMPANY</li>
+                <li class="foot-link"><a class="f-adjust-ja" href="/about">About Qrates</a></li>
+                <li class="foot-link"><a class="f-adjust-ja" href="/careers">Careers</a></li>
+                <li class="foot-link"><a class="f-adjust-ja" href="/partners">Partners</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <li class="foot-link-header">HELP</li>
+                <li class="foot-link"><a class="f-adjust-ja" href="https://support.qrates.com/" target="_blank">Support
+                        Center</a></li>
+                <li class="foot-link"><a class="f-adjust-ja" href="/contact">Contact Us</a></li>
+                <li class="foot-link"><a class="f-adjust-ja"
+                        href="https://support.qrates.com/article/ty2pmtraxf-cancellation-refund-and-replacement-policy"
+                        target="_blank">Returns</a></li>
+                <li class="foot-link"><a class="f-adjust-ja"
+                        href="https://support.qrates.com/category/LvxH57l654-shopping-guide"
+                        target="_blank">Shipping</a></li>
+            </ul>
+        </div>
+        <div class="footer-social-mob">
+            <a class="foot-i" href="https://www.facebook.com/qratesinfo" target="_blank">
+                <i class="fab fa-facebook-f social-icons"></i>
+            </a>
+            <a class="foot-i" href="https://www.instagram.com/qrates/" target="_blank">
+                <i class="fab fa-instagram social-icons"></i>
+            </a>
+            <a class="foot-i" href="https://twitter.com/qrates_com" target="_blank">
+                <i class="fab fa-twitter social-icons"></i>
+            </a>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="https://assets.qrates.com/packs/media/logos/qrates-logo-footer-498fa5b7.svg" alt="Qrates">
+                </a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-lan">
+                    <div class="foot-lan">
+                        <div class="lang-input">English <i class="fa fa-chevron-down" aria-hidden="true"
+                                id="dropdown-l"></i></div>
+                        <div class="lang-menu">
+                            <div class="lang selectedd" data-value="en">English</div>
+                            <div class="lang" data-value="ja">日本語</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a class="foot-i" href="https://www.facebook.com/qratesinfo" target="_blank">
+                        <i class="fab fa-facebook-f social-icons"></i>
+                    </a>
+                    <a class="foot-i" href="https://www.instagram.com/qrates/" target="_blank">
+                        <i class="fab fa-instagram social-icons"></i>
+                    </a>
+                    <a class="foot-i" href="https://twitter.com/qrates_com" target="_blank">
+                        <i class="fab fa-twitter social-icons"></i>
+                    </a>
+                </div>
+                <ul class="footer-tpl">
+                    <li><a class="f-adjust-ja" href="/terms">Terms of Service</a></li>
+                    <li><a class="f-adjust-ja" href="/privacy">Privacy Policy</a></li>
+                    <li><a class="f-adjust-ja" href="/legal">Legal Information</a></li>
+                    <li class="u-hidden-tablet">
+                        <small class="f-small">© TDMS Inc.</small>
+                    </li>
+                </ul>
+                <small class="f-small-mob">© TDMS Inc.</small>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

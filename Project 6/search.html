@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+
+<body>
+    <div class="ReactModal__Content ReactModal__Content--after-open p-modal--full c-search-modal__contents"
+        tabindex="-1" role="dialog" aria-modal="true">
+        <div class="c-close--modal"><a href="index.html">×</a></div>
+        <div class="c-search-modal__container c-search-modal__container--search-only">
+            <div class="ais-CurrentRefinements ais-CurrentRefinements--noRefinement">
+                <ul class="ais-CurrentRefinements-list ais-CurrentRefinements-list--noRefinement"></ul>
+            </div>
+            <div class="c-search-modal__input c-search-modal__input--blank">
+                <i class="fa fa-search s-h-f" aria-hidden="true"></i>
+                <input class="c-search__input" id="search" name="search" type="search" autocomplete="off"
+                    placeholder="Search by artist, keyword or genre" value="">
+                <div class="c-search-modal__input__clear">Clear</div>
+            </div>
+            <div class="c-search-modal__popular">
+                <div class="c-search-modal__popular__label">
+                    <p>Popular searches</p>
+                </div>
+                <div class="c-search-modal__popular__tags" wovn-ignore="">
+                    <div class="c-tag--project">vulfpeck</div>
+                    <div class="c-tag--project">chill</div>
+                    <div class="c-tag--project">hiphop</div>
+                    <div class="c-tag--project">electronic</div>
+                    <div class="c-tag--project">indie</div>
+                    <div class="c-tag--project">funk</div>
+                    <div class="c-tag--project">r&amp;b</div>
+                    <div class="c-tag--project">rock</div>
+                </div>
+            </div>
+            <hr class="c-divider--blank">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
